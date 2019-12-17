@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+	  background-image: url(../images/mac.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /*720px*/
+    height: 50vw;
+    width: 100%;
+    background-size: cover;
+    /*background-position: center center;*/
+    padding: 200px 0;
+    transform: skew(0deg, -5deg);
+    margin-top: -200px;
+}
+
+.navbar {
+  /*background-color: #333;*/
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  transform: skew(0deg, 5deg);
+  margin-top: -20px;
+}
+
+.navbar a {
+  float: left;
+  /*color: #f2f2f2;*/
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  /*17px*/
+  font-size: 1vw;
+
+}
+
+.navbar a:hover {
+  /*background-color: #ddd;*/
+  color: white;
+}
+
+.navbar a.active {
+  /*background-color: #4CAF50;*/
+  color: white;
+  /*23px*/
+  font-size: 1.1vw;
+}
+
+h1 {
+	font-size: 2.8vw;
+}
+
+h3 {
+  font-size: 2.5vw;
+}
+
+.content {
+  /*40px*/
+  padding: 4vw; 
+  text-align: left; 
+  position: relative; 
+  /*350px*/
+  top: 15vw; 
+  color: white;
+  /*width: 500px;*/
+  font-size: 1.1vw;
+  transform: skew(0deg, 5deg);
+}
+
+#profession {
+	color: LightPink;
+}
+
+.content1 {
+  padding: 4vw; 
+  font-size: 1.1vw;
+  position: relative;
+  text-align: left;
+  top: 10vw;
+  height: 40vw;
+}
+
+.push {
+  padding: 4vw;
+}
+
+img {
+  padding: 4vw;
+  float: left;
+  max-width: 100%;
+  height: 40vw;
+}
+
+#skills {
+  text-align: left;
+  padding: 4vw;
+}
+
+#background2 {
+  background-color: LavenderBlush;
+  background-attachment: scroll;
+  /*720px*/
+  height: 40vw;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  /*35vw*/
+  top: 550px;
+  /*background-position: center center;*/
+  padding: 200px 0;
+  transform: skew(0deg, -5deg);
+  margin-top: -200px;
+ }
+ 
+ .underline {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 1.5;
+ }
+
+ #myinterests {
+  text-align: center;
+ }
+
+.content2 {
+  padding: 1vw; 
+  /*padding-top: 0;*/
+  font-size: 1.2vw;
+  text-align: left;
+  /*height: 40vw;*/
+  margin: 1vw;
+  transform: skew(0deg, 5deg);
+  margin-top: -100px;
+}
+
+.list {
+  padding: 8vw;
+}
+
+.content3 {
+  padding: 4vw; 
+  font-size: 1.2vw;
+  position: relative;
+  text-align: center;
+  top: 600px;
+  height: 40vw;
+}
