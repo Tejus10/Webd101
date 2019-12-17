@@ -5,30 +5,32 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="background">
-		<div class="navbar">
-			<a class="active" href="main page.html">Home</a>
-			<a href="#education">Education</a>
-			<a href="#myinterests">My Interests</a>
-			<a href="#contactme">Contact Me</a>
+	<header id="top">
+		<div class="background">
+			<div class="navbar">
+				<a class="active" href="main page.html">Home</a>
+				<a href="#education">Education</a>
+				<a href="#myinterests">My Interests</a>
+				<a href="#contactme">Contact Me</a>
+			</div>
+			<div class="content">
+				<h1>Hi, I'm Tony Stark</h1>
+				<p>
+					Sometimes people call me Tejus Singla.<br>
+				</p>
+				<p id="profession">Philosopher | Space Enthusiast</p><br>
+				<!-- <p>
+					Bachelor of technology, Mathematics And Computing<br>
+					Indian Institute of Technology Guwahati.  
+				</p> -->
+			</div>
 		</div>
-		<div class="content">
-			<h1>Hi, I'm Tony Stark</h1>
-			<p>
-				Sometimes people call me Tejus Singla.<br>
-			</p>
-			<p id="profession">Philosopher | Space Enthusiast</p><br>
-			<!-- <p>
-				Bachelor of technology, Mathematics And Computing<br>
-				Indian Institute of Technology Guwahati.  
-			</p> -->
-		</div>
-	</div>
-
+	</header>
 	<div class="content1">
 		<div id="me">
 			<img src="C:\Users\tejus\Desktop\New folder\My portfolio\images\me.JPG" alt="Tejus's image">
@@ -67,6 +69,34 @@
 	</div>	
 	<div class="content3">
 		<h1 id="contactme" class="underline">Contact Me</h1>
+		<div class="push">
+			<form action="/action_page.php" method="post">
+				<label for="name">YOUR NAME</label><br>
+				<input type="text" name="name" id="name" required><br>
+				<label for="email">YOUR EMAIL</label><br>
+				<input type="text" name="email" id="email" required><br>
+				<label for="message">YOUR MESSAGE</label><br>
+				<textarea name="message" id="message" required rows="5" cols="40"></textarea><br><br>
+				<input type="submit" value="Send" class="btn btn-dark">
+			</form>
+		</div>
+	</div>
+	<div class="last">
+		<div class="push">
+	  		<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-snapchat-ghost"></a>
+		</div>	
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+		<a href="#top"> Tejus Singla</a>
+		</div>
+		<!-- Copyright -->
+
 	</div>
 </body>
 </html>
