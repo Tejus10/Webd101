@@ -1,22 +1,24 @@
-/*********************Large Devices*********************/
-@media (min-width: 1000px) {
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 .background {
-	  background-image: url(../images/mac.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    /*720px*/
-    height: 50vw;
-    width: 100%;
-    background-size: cover;
-    /*background-position: center center;*/
-    padding: 200px 0;
-    transform: skew(0deg, -5deg);
-    margin-top: -200px;
+  background-image: url(../images/mac.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  /*720px*/
+  height: 50vw;
+  width: 100%;
+  background-size: cover;
+  /*background-position: center center;*/
+  padding: 200px 0;
+  transform: skew(0deg, -5deg);
+  margin-top: -200px;
 }
 
 .navbar {
@@ -52,7 +54,7 @@
 }
 
 h1 {
-	font-size: 2.8vw;
+  font-size: 2.8vw;
 }
 
 h3 {
@@ -73,7 +75,7 @@ h3 {
 }
 
 #profession {
-	color: LightPink;
+  color: LightPink;
 }
 
 .content1 {
@@ -100,58 +102,138 @@ img {
   text-align: left;
   padding: 4vw;
 }
-
-#background2 {
-  background-color: LavenderBlush;
-  background-attachment: scroll;
-  /*720px*/
-  height: 40vw;
-  width: 100%;
-  background-size: cover;
-  position: relative;
-  /*35vw*/
-  top: 550px;
-  /*background-position: center center;*/
-  padding: 200px 0;
-  transform: skew(0deg, -5deg);
-  margin-top: -200px;
- }
  
- .underline {
+.underline {
   border-bottom: 2px solid currentColor;
   display: inline-block;
   line-height: 1.5;
  }
 
- #myinterests {
-  text-align: center;
- }
-
-.content2 {
-  padding: 1vw; 
-  /*padding-top: 0;*/
-  font-size: 1.2vw;
-  text-align: left;
-  /*height: 40vw;*/
-  margin: 1vw;
+#myinterests {
   transform: skew(0deg, 5deg);
-  margin-top: -100px;
-}
+  margin-top: -150px;
+ }
 
 .list {
   padding: 8vw;
 }
 
-.content3 {
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  color: MintCream;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  /*background: #3B5998;*/
+  background: #33001a;
+  /*color: white;*/
+  color: LavenderBlush;
+  /*padding: 20px;*/
+  margin-right: 20px;
+}
+
+/* Twitter */
+.fa-twitter {
+  /*background: #55ACEE;*/
+  /*color: white;*/
+  background: #33001a;
+  color: LavenderBlush;
+  margin-right: 20px;
+  /*padding: 20px;*/
+}
+
+.fa-google {
+  /*background: #dd4b39;*/
+  /*color: white;*/
+  background: #33001a;
+  color: LavenderBlush;
+  margin-right: 20px;
+}
+
+.fa-linkedin {
+  /*background: #007bb5;*/
+  /*color: white;*/
+  background: #33001a;
+  color: LavenderBlush;
+  margin-right: 20px;
+}
+
+.fa-youtube {
+  /*background: #bb0000;*/
+  /*color: white;*/
+  background: #33001a;
+  color: LavenderBlush;
+  margin-right: 20px;
+}
+
+.fa-instagram {
+  /*background: #125688;*/
+  /*color: white;*/
+  background: #33001a;
+  color: LavenderBlush;
+  margin-right: 20px;
+}
+
+.fa-snapchat-ghost {
+  /*background: #fffc00;*/
+  /*color: white;*/
+  background: #33001a;
+  color: LavenderBlush;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*********************Large Devices*********************/
+@media (min-width: 1000px) {
+  #background2 {
+  background-color: LavenderBlush;
+  background-attachment: scroll;
+  /*720px*/
+  height: 80vw;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /*35vw*/
+  top: 600px;
+  /*background-position: center center;*/
+  padding: 200px 0;
+  transform: skew(0deg, -5deg);
+  margin-top: -200px;
+  }
+
+ .content2 {
+  padding: 1.5vw; 
+  /*padding-top: 0;*/
+  font-size: 1.2vw;
+  text-align: left;
+  display: inline-block;
+
+  height: 40vw;
+  margin: 1vw;
+  transform: skew(0deg, 5deg);
+  margin-top: -20px;
+  }
+
+ .space {
+  height: 30vw;
+  border-radius: 50%;
+  }
+
+  .content3 {
   padding: 4vw; 
   font-size: 1.2vw;
   position: relative;
   text-align: center;
   top: 600px;
   height: 40vw;
-}
+  }
 
-.last {
+  .last {
   padding: 1vw; 
   font-size: 1.2vw;
   position: relative;
@@ -161,9 +243,9 @@ img {
   background-color: #33001a;
   background-attachment: scroll;
   background-size: cover;
-}
+  }
 
-.fa {
+  .fa {
   padding: 20px;
   /*30px*/
   font-size: 30px;
@@ -173,242 +255,69 @@ img {
   text-decoration: none;
   border-radius: 10%;
   position: relative;
+  }
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-  color: MintCream;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  /*background: #3B5998;*/
-  background: #33001a;
-  /*color: white;*/
-  color: LavenderBlush;
-  /*padding: 20px;*/
-  margin-right: 20px;
-}
-
-/* Twitter */
-.fa-twitter {
-  /*background: #55ACEE;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-  /*padding: 20px;*/
-}
-
-.fa-google {
-  /*background: #dd4b39;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-linkedin {
-  /*background: #007bb5;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-youtube {
-  /*background: #bb0000;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-instagram {
-  /*background: #125688;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-snapchat-ghost {
-  /*background: #fffc00;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-}
 /*********************Medium Devices*********************/
 @media (min-width: 768px) and (max-width: 999px) {
- * {
-  margin: 0;
-  padding: 0;
-}
-
-.background {
-    background-image: url(../images/mac.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    /*720px*/
-    height: 60vw;
-    width: 100%;
-    background-size: cover;
-    /*background-position: center center;*/
-    padding: 200px 0;
-    transform: skew(0deg, -5deg);
-    margin-top: -200px;
-}
-
-.navbar {
-  /*background-color: #333;*/
-  overflow: hidden;
-  position: fixed;
-  z-index: 10;
-  transform: skew(0deg, 5deg);
-  margin-top: -20px;
-}
-
-.navbar a {
-  float: left;
-  /*color: #f2f2f2;*/
-  color: grey;
-  text-align: center;
-  padding: 14px 16px;
-  /*17px*/
-  font-size: 1vw;
-
-}
-
-.navbar a:hover {
-  /*background-color: #ddd;*/
-  color: white;
-}
-
-.navbar a.active {
-  /*background-color: #4CAF50;*/
-  color: white;
-  /*23px*/
-  font-size: 1.1vw;
-}
-
-h1 {
-  font-size: 2.8vw;
-}
-
-h3 {
-  font-size: 2.5vw;
-}
-
-.content {
-  /*40px*/
-  padding: 4vw; 
-  text-align: left; 
-  position: relative; 
-  /*350px*/
-  top: 15vw; 
-  color: white;
-  /*width: 500px;*/
-  font-size: 1.1vw;
-  transform: skew(0deg, 5deg);
-}
-
-#profession {
-  color: LightPink;
-}
-
-.content1 {
-  padding: 4vw; 
-  font-size: 1.1vw;
-  position: relative;
-  text-align: left;
-  top: 10vw;
-  height: 40vw;
-}
-
-.push {
-  padding: 4vw;
-}
-
-img {
-  padding: 4vw;
-  float: left;
-  max-width: 100%;
-  height: 40vw;
-}
-
-#skills {
-  text-align: left;
-  padding: 4vw;
-}
-
-#background2 {
+  #background2 {
   background-color: LavenderBlush;
   background-attachment: scroll;
   /*720px*/
-  height: 40vw;
+  height: 80vw;
   width: 100%;
   background-size: cover;
   position: relative;
+  display: inline-block;
+  text-align: center;
   /*35vw*/
-  top: 550px;
+  top: 450px;
   /*background-position: center center;*/
   padding: 200px 0;
   transform: skew(0deg, -5deg);
   margin-top: -200px;
- }
- 
- .underline {
-  border-bottom: 2px solid currentColor;
-  display: inline-block;
-  line-height: 1.5;
- }
+  }
 
- #myinterests {
-  text-align: center;
- }
-
-.content2 {
-  padding: 1vw; 
+  .content2 {
+  /*padding: 1.5vw; */
   /*padding-top: 0;*/
   font-size: 1.2vw;
   text-align: left;
-  /*height: 40vw;*/
+  display: inline-block;
+
+  height: 40vw;
   margin: 1vw;
   transform: skew(0deg, 5deg);
-  margin-top: -100px;
-}
+  margin-top: -50px;
+  }
 
-.list {
-  padding: 8vw;
-}
+  .space {
+  height: 30vw;
+  border-radius: 50%;
+  }
 
-.content3 {
+  .content3 {
   padding: 4vw; 
   font-size: 1.2vw;
   position: relative;
   text-align: center;
-  top: 600px;
+  top: 500px;
   height: 40vw;
-}
+  }
 
-.last {
+  .last {
   padding: 1vw; 
   font-size: 1.2vw;
   position: relative;
   text-align: center;
-  top: 650px;
+  top: 550px;
   height: 12vw;
   background-color: #33001a;
   background-attachment: scroll;
   background-size: cover;
-}
+  }
 
-.fa {
+  .fa {
   /*padding: 20px;*/
   /*30px*/
   font-size: 30px;
@@ -418,231 +327,56 @@ img {
   text-decoration: none;
   border-radius: 10%;
   position: relative;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-  color: MintCream;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  /*background: #3B5998;*/
-  background: #33001a;
-  /*color: white;*/
-  color: LavenderBlush;
-  /*padding: 20px;*/
-  margin-right: 20px;
-}
-
-/* Twitter */
-.fa-twitter {
-  /*background: #55ACEE;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-  /*padding: 20px;*/
-}
-
-.fa-google {
-  /*background: #dd4b39;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-linkedin {
-  /*background: #007bb5;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-youtube {
-  /*background: #bb0000;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-instagram {
-  /*background: #125688;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
-
-.fa-snapchat-ghost {
-  /*background: #fffc00;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-} 
+  }
 }
 
 /*********************Small Devices*********************/
-@media (max-width: 767px) {
- * {
-  margin: 0;
-  padding: 0;
-}
-
-.background {
-    background-image: url(../images/mac.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    /*720px*/
-    height: 50vw;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    padding: 200px 0;
-    transform: skew(0deg, -5deg);
-    margin-top: -200px;
-}
-
-.navbar {
-  /*background-color: #333;*/
-  overflow: hidden;
-  position: fixed;
-  z-index: 10;
-  transform: skew(0deg, 5deg);
-  margin-top: -20px;
-}
-
-.navbar a {
-  float: left;
-  /*color: #f2f2f2;*/
-  color: grey;
-  text-align: center;
-  padding: 14px 16px;
-  /*17px*/
-  font-size: 1vw;
-
-}
-
-.navbar a:hover {
-  /*background-color: #ddd;*/
-  color: white;
-}
-
-.navbar a.active {
-  /*background-color: #4CAF50;*/
-  color: white;
-  /*23px*/
-  font-size: 1.1vw;
-}
-
-h1 {
-  font-size: 2.8vw;
-}
-
-h3 {
-  font-size: 2.5vw;
-}
-
-.content {
-  /*40px*/
-  padding: 4vw; 
-  text-align: left; 
-  position: relative; 
-  /*350px*/
-  top: 15vw; 
-  color: white;
-  /*width: 500px;*/
-  font-size: 1.1vw;
-  transform: skew(0deg, 5deg);
-}
-
-#profession {
-  color: LightPink;
-}
-
-.content1 {
-  padding: 4vw; 
-  font-size: 1.1vw;
-  position: relative;
-  text-align: left;
-  top: 10vw;
-  height: 40vw;
-}
-
-.push {
-  padding: 4vw;
-}
-
-img {
-  padding: 4vw;
-  float: left;
-  max-width: 100%;
-  height: 40vw;
-}
-
-#skills {
-  text-align: left;
-  padding: 4vw;
-}
-
-#background2 {
+@media (min-width: 576px) and (max-width: 767px) {
+  #background2 {
   background-color: LavenderBlush;
   background-attachment: scroll;
   /*720px*/
-  height: 20vw;
+  height: 90vw;
   width: 100%;
   background-size: cover;
   position: relative;
+  display: inline-block;
+  text-align: center;
   /*35vw*/
-  top: 450px;
+  top: 400px;
   /*background-position: center center;*/
   padding: 200px 0;
   transform: skew(0deg, -5deg);
   margin-top: -200px;
- }
- 
- .underline {
-  border-bottom: 2px solid currentColor;
-  display: inline-block;
-  line-height: 1.5;
- }
+  }
 
- #myinterests {
-  text-align: center;
- }
-
-.content2 {
-  padding: 1vw; 
+  .content2 {
+  padding: 1.5vw; 
   /*padding-top: 0;*/
   font-size: 1.2vw;
   text-align: left;
-  /*height: 40vw;*/
+  display: inline-block;
+  height: 40vw;
   margin: 1vw;
   transform: skew(0deg, 5deg);
   margin-top: -100px;
-}
+  }
 
-.list {
-  padding: 8vw;
-}
+  .space {
+  height: 30vw;
+  border-radius: 50%;
+  }
 
-.content3 {
+  .content3 {
   padding: 4vw; 
   font-size: 1.2vw;
   position: relative;
   text-align: center;
   top: 450px;
   height: 40vw;
-}
+  }
 
-.last {
+  .last {
   padding: 1vw; 
   font-size: 1.2vw;
   position: relative;
@@ -652,9 +386,9 @@ img {
   background-color: #33001a;
   background-attachment: scroll;
   background-size: cover;
-}
+  }
 
-.fa {
+  .fa {
   /*padding: 20px;*/
   /*30px*/
   font-size: 4vw;
@@ -664,73 +398,240 @@ img {
   text-decoration: none;
   border-radius: 10%;
   position: relative;
+  }
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-  color: MintCream;
-}
 
-/* Set a specific color for each brand */
+/*********************Smaller Devices*********************/
+@media (min-width: 450px) and (max-width: 575px) {
+#background2 {
+  background-color: LavenderBlush;
+  background-attachment: scroll;
+  /*720px*/
+  height: 210vw;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /*35vw*/
+  top: 400px;
+  /*background-position: center center;*/
+  padding: 200px 0;
+  transform: skew(0deg, -5deg);
+  margin-top: -200px;
+  }
 
-/* Facebook */
-.fa-facebook {
-  /*background: #3B5998;*/
-  background: #33001a;
-  /*color: white;*/
-  color: LavenderBlush;
+  .content2 {
+  padding: 1.5vw; 
+  /*padding-top: 0;*/
+  font-size: 1.2vw;
+  text-align: left;
+  display: inline-block;
+  height: 40vw;
+  margin: 1vw;
+  transform: skew(0deg, 5deg);
+  margin-top: -100px;
+  }
+
+  .space {
+  height: 30vw;
+  width: 33%;
+  border-radius: 50%;
+  }
+
+  .content3 {
+  padding: 4vw; 
+  font-size: 1.2vw;
+  position: relative;
+  text-align: center;
+  top: 400px;
+  height: 40vw;
+  }
+
+  .last {
+  padding: 1vw; 
+  font-size: 1.2vw;
+  position: relative;
+  text-align: center;
+  top: 450px;
+  height: 12vw;
+  background-color: #33001a;
+  background-attachment: scroll;
+  background-size: cover;
+  }
+
+  .fa {
   /*padding: 20px;*/
-  margin-right: 20px;
+  /*30px*/
+  font-size: 4vw;
+  /*50px*/
+  width: 3vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+  position: relative;
+  }
 }
 
-/* Twitter */
-.fa-twitter {
-  /*background: #55ACEE;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
+/*********************Smallest Devices*********************/
+@media (min-width: 344px) and (max-width: 449px) {
+  #background2 {
+  background-color: LavenderBlush;
+  background-attachment: scroll;
+  /*720px*/
+  height: 240vw;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /*35vw*/
+  top: 380px;
+  /*background-position: center center;*/
+  padding: 200px 0;
+  transform: skew(0deg, -5deg);
+  margin-top: -200px;
+  }
+
+  .content2 {
+  padding: 1.5vw; 
+  /*padding-top: 0;*/
+  font-size: 1.2vw;
+  text-align: left;
+  display: inline-block;
+  height: 40vw;
+  margin: 1vw;
+  transform: skew(0deg, 5deg);
+  margin-top: -100px;
+  }
+
+  .space {
+  height: 30vw;
+  width: 33%;
+  border-radius: 50%;
+  }
+
+  .content3 {
+  padding: 4vw; 
+  font-size: 1.2vw;
+  position: relative;
+  text-align: center;
+  top: 400px;
+  height: 40vw;
+  }
+
+  .last {
+  padding: 1vw; 
+  font-size: 1.2vw;
+  position: relative;
+  text-align: center;
+  top: 450px;
+  height: 12vw;
+  background-color: #33001a;
+  background-attachment: scroll;
+  background-size: cover;
+  }
+
+  .fa {
   /*padding: 20px;*/
+  /*30px*/
+  font-size: 4vw;
+  /*50px*/
+  width: 3vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+  position: relative;
+  }
 }
 
-.fa-google {
-  /*background: #dd4b39;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
+/*********************Old Devices*********************/
+@media (max-width: 343px) {
+  #background2 {
+  background-color: LavenderBlush;
+  background-attachment: scroll;
+  /*720px*/
+  height: 240vw;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /*35vw*/
+  top: 350px;
+  /*background-position: center center;*/
+  padding: 200px 0;
+  transform: skew(0deg, -5deg);
+  margin-top: -200px;
+  }
 
-.fa-linkedin {
-  /*background: #007bb5;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
+  .fix {
+    height: 20px;
+  }
 
-.fa-youtube {
-  /*background: #bb0000;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
+  .fixtitle {
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
 
-.fa-instagram {
-  /*background: #125688;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  margin-right: 20px;
-}
+  .fixtext {
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
 
-.fa-snapchat-ghost {
-  /*background: #fffc00;*/
-  /*color: white;*/
-  background: #33001a;
-  color: LavenderBlush;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-} 
+  .fixfoot {
+    margin-top: 15px;
+  }
+
+  .content2 {
+  padding: 1.5vw; 
+  /*padding-top: 0;*/
+  font-size: 1.2vw;
+  text-align: left;
+  display: inline-block;
+  height: 40vw;
+  margin: 1vw;
+  transform: skew(0deg, 5deg);
+  margin-top: -100px;
+  }
+
+  .space {
+  height: 30vw;
+  width: 33%;
+  border-radius: 50%;
+  }
+
+  .content3 {
+  padding: 4vw; 
+  font-size: 1.2vw;
+  position: relative;
+  text-align: center;
+  top: 350px;
+  height: 40vw;
+  }
+
+  .last {
+  padding: 1vw; 
+  font-size: 1.2vw;
+  position: relative;
+  text-align: center;
+  top: 400px;
+  height: 12vw;
+  background-color: #33001a;
+  background-attachment: scroll;
+  background-size: cover;
+  }
+
+  .fa {
+  /*padding: 20px;*/
+  /*30px*/
+  font-size: 4vw;
+  /*50px*/
+  width: 3vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+  position: relative;
+  }
 }
